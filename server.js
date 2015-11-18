@@ -8,8 +8,7 @@
  */
 
 process.chdir(__dirname);
-
 (function () {
-  const strapi = require('strapi');
-  strapi.start();
+    const strapi = require('strapi');
+    strapi.start();
 })();
