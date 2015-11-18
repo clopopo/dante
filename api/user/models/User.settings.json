@@ -1,6 +1,7 @@
 {
   "identity": "user",
-  "connection": "default",
+  "tableName": "tb_user",
+  "connection": "pg",
   "schema": true,
   "limit": 20,
   "defaultTemplate": "default",
@@ -11,10 +12,19 @@
       "minLength": 3,
       "unique": true
     },
+    "phone": {
+      "type": "string",
+      "minLength": 11,
+      "unique": true
+    },
     "email": {
       "type": "email",
       "minLength": 6,
       "unique": true
+    },
+    "emailVerify": {
+      "type": "boolean",
+      "defaultsTo": false
     },
     "lang": {
       "type": "string",

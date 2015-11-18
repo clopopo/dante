@@ -1,12 +1,16 @@
 {
   "static": true,
-  "views": false,
+  "views": {
+    "map": {
+      "html": "nunjucks"
+    }
+  },
   "websockets": true,
   "favicon": {
     "path": "favicon.ico",
     "maxAge": 86400000
   },
-  "prefix": "",
+  "prefix": "/api",
   "blueprints": {
     "defaultLimit": 30,
     "populate": true

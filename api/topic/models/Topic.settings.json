@@ -1,0 +1,11 @@
+{
+  "identity": "topic",
+  "tableName": "tb_topic",
+  "connection": "pg",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}

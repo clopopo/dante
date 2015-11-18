@@ -1,0 +1,11 @@
+{
+  "identity": "voteOption",
+  "tableName": "tb_vote_option",
+  "connection": "pg",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}

@@ -1,0 +1,11 @@
+{
+  "identity": "componentGroup",
+  "tableName": "tb_component_group",
+  "connection": "pg",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}

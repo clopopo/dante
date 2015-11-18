@@ -1,21 +1,16 @@
 {
   "orm": {
     "adapters": {
-      "disk": "sails-disk"
+      "postgres": "sails-postgresql"
     },
     "defaultConnection": "default",
     "connections": {
-      "default": {
-        "adapter": "disk",
-        "filePath": ".tmp/",
-        "fileName": "default.db",
-        "migrate": "alter"
-      },
-      "permanent": {
-        "adapter": "disk",
-        "filePath": "./data/",
-        "fileName": "permanent.db",
-        "migrate": "alter"
+      "pg": {
+        "adapter": "postgres",
+        "host": "localhost",
+        "user": "postgres",
+        "database": "db_dante",
+        "migrate": "drop"
       }
     }
   }

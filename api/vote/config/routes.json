@@ -1,0 +1,57 @@
+{
+  "routes": {
+    "GET /vote": {
+      "controller": "Vote",
+      "action": "find",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "GET /vote/:id": {
+      "controller": "Vote",
+      "action": "findOne",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /vote": {
+      "controller": "Vote",
+      "action": "create",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "PUT /vote/:id": {
+      "controller": "Vote",
+      "action": "update",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    },
+    "DELETE /vote/:id": {
+      "controller": "Vote",
+      "action": "destroy",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /vote/:parentId/:relation": {
+      "controller": "Vote",
+      "action": "add",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "DELETE /vote/:parentId/:relation/:id": {
+      "controller": "Vote",
+      "action": "remove",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    }
+  }
+}

@@ -1,4 +1,6 @@
 'use strict';
+const router = require('lark-router');
+
 
 /**
  * An asynchronous bootstrap function that runs before
@@ -9,17 +11,19 @@
  */
 
 module.exports.bootstrap = function (cb) {
-  const fixtures = require('../../api/user/config/fixtures/index');
 
-  fixtures.role.create().then(function () {
-    fixtures.route.create().then(function () {
-      cb();
+
+    strapi.app.use(router({'directory': 'web'}));
+    const fixtures = require('../../api/user/config/fixtures/index');
+    fixtures.role.create().then(function () {
+        fixtures.route.create().then(function () {
+            cb();
+        }).catch(function (err) {
+            strapi.log.error(err);
+            cb(err);
+        });
     }).catch(function (err) {
-      strapi.log.error(err);
-      cb(err);
+        strapi.log.error(err);
+        cb(err);
     });
-  }).catch(function (err) {
-    strapi.log.error(err);
-    cb(err);
-  });
 };

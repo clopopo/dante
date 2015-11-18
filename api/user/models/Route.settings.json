@@ -1,6 +1,7 @@
 {
   "identity": "route",
-  "connection": "permanent",
+  "tableName": "tb_route",
+  "connection": "pg",
   "displayName": "name",
   "schema": true,
   "displayedAttribute": "name",

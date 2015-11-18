@@ -1,6 +1,7 @@
 {
   "identity": "role",
-  "connection": "permanent",
+  "tableName": "tb_role",
+  "connection": "pg",
   "displayedAttribute": "name",
   "schema": true,
   "attributes": {

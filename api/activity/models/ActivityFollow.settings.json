@@ -1,0 +1,11 @@
+{
+  "identity": "activityFollow",
+  "tableName": "tb_activity_follow",
+  "connection": "pg",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}

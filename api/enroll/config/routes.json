@@ -1,0 +1,57 @@
+{
+  "routes": {
+    "GET /enroll": {
+      "controller": "Enroll",
+      "action": "find",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "GET /enroll/:id": {
+      "controller": "Enroll",
+      "action": "findOne",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /enroll": {
+      "controller": "Enroll",
+      "action": "create",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "PUT /enroll/:id": {
+      "controller": "Enroll",
+      "action": "update",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    },
+    "DELETE /enroll/:id": {
+      "controller": "Enroll",
+      "action": "destroy",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /enroll/:parentId/:relation": {
+      "controller": "Enroll",
+      "action": "add",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "DELETE /enroll/:parentId/:relation/:id": {
+      "controller": "Enroll",
+      "action": "remove",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "identity": "enrollField",
+  "tableName": "tb_enroll_field",
+  "connection": "pg",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}

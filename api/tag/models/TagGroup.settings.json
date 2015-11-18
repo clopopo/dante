@@ -1,0 +1,11 @@
+{
+  "identity": "tagGroup",
+  "tableName": "tb_tag_group",
+  "connection": "pg",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}

@@ -1,0 +1,40 @@
+{
+  "identity": "activityType",
+  "tableName": "tb_activity_type",
+  "connection": "pg",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+    "id": {
+      "type": "integer",
+      "primaryKey": true,
+      "autoIncrement": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": "true"
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "cover": {
+      "type": "string",
+      "required": true
+    },
+    "theme": {
+      "type": "string",
+      "enum": [
+        "post",
+        "pictureWall"
+      ]
+    },
+    "activities": {
+      "collection": "activity",
+      "via": "activityType"
+    }
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}

@@ -1,0 +1,17 @@
+{
+  "identity": "activity",
+  "tableName": "tb_activity",
+  "connection": "pg",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+    "createdBy": {
+      "model": "user"
+    },
+    "activityType": {
+      "model": "activityType"
+    }
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}
