@@ -1,6 +1,6 @@
 {
   "studio": {
-    "enabled": true,
+    "enabled": false,
     "secretKey": "YOUR SECRET KEY HERE",
     "appId": 436
   }

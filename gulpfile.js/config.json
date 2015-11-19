@@ -5,7 +5,6 @@
   },
   "tasks": {
     "browserSync": {
-
       "proxy": "http://localhost:1337/"
     },
     "js": {
@@ -69,19 +68,13 @@
         "svg"
       ]
     },
+
     "svgSprite": {
       "src": "sprites",
       "dest": "images",
       "extensions": [
         "svg"
       ]
-    },
-    "nodemon": {
-      "script": "./server",
-      "ext": "js html",
-      "env": {
-        "NODE_ENV": "development"
-      }
     }
   }
 }

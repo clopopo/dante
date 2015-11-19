@@ -9,7 +9,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var path = require('path');
 
 var paths = {
-    src: path.join(config.root.src, config.tasks.css.src, '/**/*'),
+    src: path.join(config.root.src, config.tasks.css.src, '/**/*.css'),
     dest: path.join(config.root.dest, config.tasks.css.dest)
 };
 
