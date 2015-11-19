@@ -12,8 +12,8 @@ const router = require('lark-router');
 
 module.exports.bootstrap = function (cb) {
 
-
-    strapi.app.use(router({'directory': 'web'}));
+    const app = strapi.app;
+    app.use(router({'directory': 'web'}));
     const fixtures = require('../../api/user/config/fixtures/index');
     fixtures.role.create().then(function () {
         fixtures.route.create().then(function () {
