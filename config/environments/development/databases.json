@@ -3,7 +3,7 @@
     "adapters": {
       "postgres": "sails-postgresql"
     },
-    "defaultConnection": "default",
+    "defaultConnection": "pg",
     "connections": {
       "pg": {
         "adapter": "postgres",
